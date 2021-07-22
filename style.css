@@ -114,7 +114,7 @@ body {
   margin: 0;
 }
 
-/* this fixes the invisible bottom margin -- because img tag is an inline-block element and inline-block element is by default vertical-align middle so for inline-block give to vertical-align:top */
+/* vertical-align: top fixes the invisible bottom margin -- because img tag is an inline-block element and inline-block element is by default vertical-align middle so for inline-block give to vertical-align:top */
 
 .image-content-split img {
   width: 50%;
@@ -166,13 +166,13 @@ body {
   background: rgba(255, 116, 101, 0.4);
 }
 
-/* Two image split */
+/* Cherry-Orange Section */
 
 .cherry-orange-split {
   display: flex;
   justify-content: center;
   font-family: 'Fraunces';
-  color: hsl(212, 27%, 19%);
+  color: rgba(0, 0, 0, 0.65);
   position: relative;
 }
 
@@ -182,18 +182,27 @@ body {
 
 .cherry-orange-split .left-side .content,
 .cherry-orange-split .right-side .content {
-  top: 50%;
+  top: 60%;
   position: absolute;
   width: 50%;
 }
 
 .cherry-orange-split p,
 .cherry-orange-split h2 {
+  font-weight: 900;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0 25%;
 }
+
+.cherry-orange-split p {
+  margin-top: 30px;
+  font-family: 'Barlow', 'sans-serif';
+}
+
+/* Testimonial Section */
 
 .testimonials-header {
   text-align: center;
