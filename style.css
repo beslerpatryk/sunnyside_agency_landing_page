@@ -363,7 +363,7 @@ body {
   display: inline-block;
   width: 20px;
   height: 20px;
-  mask-image: url(images/icon-facebook.svg);
+  -webkit-mask-image: url(images/icon-facebook.svg);
   background-image: url(images/icon-facebook.svg);
   margin: 0;
   padding: 0;
@@ -381,7 +381,7 @@ body {
   display: inline-block;
   width: 20px;
   height: 20px;
-  mask-image: url(images/icon-instagram.svg);
+  -webkit-mask-image: url(images/icon-instagram.svg);
   background-image: url(images/icon-instagram.svg);
   margin: 0;
   padding: 0;
@@ -399,7 +399,7 @@ body {
   display: inline-block;
   width: 20px;
   height: 17px;
-  mask-image: url(images/icon-twitter.svg);
+  -webkit-mask-image: url(images/icon-twitter.svg);
   background-image: url(images/icon-twitter.svg);
   margin: 0;
   padding: 0;
@@ -417,7 +417,7 @@ body {
   display: inline-block;
   width: 20px;
   height: 20px;
-  mask-image: url(images/icon-pinterest.svg);
+  -webkit-mask-image: url(images/icon-pinterest.svg);
   background-image: url(images/icon-pinterest.svg);
   margin: 0;
   padding: 0;
