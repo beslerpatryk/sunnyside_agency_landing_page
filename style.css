@@ -22,10 +22,12 @@ body {
   margin: 0;
   font-family: 'Barlow', 'sans-serif';
   max-width: 1440px;
-  /* display: flex;
-  flex-direction: column;   ----> why it is now working as expected
-  align-items: center; */
+
   margin: 0 auto;
+}
+
+#menu {
+  display: none;
 }
 
 /* Blue Background Header*/
@@ -51,7 +53,7 @@ body {
 
 .image-header {
   height: 500px;
-  background-image: url('/images/desktop/image-header.jpg');
+  background-image: url('images/desktop/image-header.jpg');
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 1500px;
@@ -434,6 +436,10 @@ body {
 }
 
 @media (max-width: 1100px) {
+  .header #menu {
+    padding-bottom: 2rem;
+  }
+
   .image-content-split .content {
     padding: 1rem 3rem;
   }
@@ -488,6 +494,82 @@ body {
 }
 
 @media (max-width: 760px) and (min-width: 600px) {
+  .header {
+    font-size: 1rem;
+  }
+
+  .header .navbar {
+    width: 100%;
+    padding: 0 2rem;
+    margin: 0 0 8rem 0;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    position: absolute;
+  }
+
+  .header .navbar img {
+    height: 100%;
+  }
+
+  .header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    top: 25%;
+  }
+
+  .header nav ul {
+    width: 100%;
+    clip-path: polygon(92% 7%, 100% 0, 100% 100%, 0 100%, 0 7%);
+    background-color: white;
+    flex-direction: column;
+    padding: 4rem 4rem 0 4rem;
+    margin: 0;
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    transition: 0.3s ease-in;
+  }
+
+  .header nav ul li {
+    color: var(--Grayish-blue);
+    margin: 1rem 0;
+    font-size: 1.3rem;
+  }
+
+  .header li.contact {
+    font-size: 1rem;
+    border-radius: 30px;
+    background-color: var(--Yellow);
+    padding: 0.9rem 0;
+    width: 70%;
+  }
+
+  .image-header {
+    height: 30rem;
+    background-size: 700px;
+  }
+
+  .arrow-header {
+    top: 53%;
+  }
+
+  .mobile-nav {
+    display: block;
+    cursor: pointer;
+    order: -1;
+    align-self: flex-end;
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+
+  .header .navbar ul {
+    display: none;
+  }
+
   .image-content-split .content {
     padding: 1rem 3rem;
   }
