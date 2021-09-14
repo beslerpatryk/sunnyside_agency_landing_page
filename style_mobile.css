@@ -199,21 +199,21 @@
         width: 100%;
     }
 
-    .footer {
+    footer {
         padding: 5rem 0;
         height: 100%;
     }
 
-    .footer svg {
+    footer svg {
         margin: 0;
     }
 
-    .footer nav {
+    footer nav {
         margin-top: 2rem;
         margin-bottom: 4rem;
     }
 
-    .footer .social-media {
+    footer .social-media {
         padding: 0;
         margin: 0;
     }

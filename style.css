@@ -312,9 +312,20 @@ header li.contact:hover {
     height: 100%;
 }
 
+footer .credits {
+    position: absolute;
+    bottom: 1rem;
+
+    font-size: 11px;
+    text-align: center;
+}
+footer .credits a {
+    color: var(--Very-dark-desaturated-blue);
+}
+
 /* FOOTER */
 
-.footer {
+footer {
     position: relative;
     height: 20rem;
     display: flex;
@@ -325,29 +336,29 @@ header li.contact:hover {
     padding-top: 1rem;
 }
 
-.footer svg {
+footer svg {
     margin-bottom: 2rem;
     transform: scale(1.4);
 }
 
-.footer nav ul {
+footer nav ul {
     padding: 0;
     display: flex;
     list-style: none;
     justify-content: center;
 }
 
-.footer nav ul li {
+footer nav ul li {
     margin: 0 1.8rem;
     color: hsl(167, 31%, 43%);
     cursor: pointer;
 }
 
-.footer nav ul li:hover {
+footer nav ul li:hover {
     color: white;
 }
 
-.footer .social-media {
+footer .social-media {
     margin-top: 4rem;
     position: relative;
     display: flex;
